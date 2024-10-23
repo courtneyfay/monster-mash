@@ -5,7 +5,7 @@
     <body>
         <h1>Monster Mash</h1>
         <!-- Bonus: create your monsters via UI input -->
-        <!-- <div>
+        <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
         </div>
@@ -20,13 +20,15 @@
         <div>
             <label for="bat-wools">Number of Bat Wools:</label>
             <input type="number" id="bat-wools" name="bat-wools">
-        </div> -->
-        <!-- Add a button with a click handler that calls addMonsters function -->
-        <button onclick="addMonsters()">Create 3 Monsters</button>
-        <!-- Add at least 3 paragraph tags with the ids: monster-1, monster-2, monster-3, etc. (You can more if you'd like) -->
-        <p id="monster-1"></p>
-        <p id="monster-2"></p>
-        <p id="monster-3"></p>
+        </div>
+
+        <!-- Add a button with a click handler that calls addMonster function -->
+        <button onclick="addMonster()">Create This Monster</button>
+
+        <!-- Append text to the screen as each monster is made -->
+        <div id="monster-list">
+
+        </div>
 
         <script src="js/index.js"></script>
     </body>
